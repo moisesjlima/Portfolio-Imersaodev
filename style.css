@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-image: linear-gradient(60deg, rgba(37, 50, 55, 0.85) 30%, #9db4c0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#imersaodev {
+  background: linear-gradient(60deg, #163165, #081A33);
+  border-radius: 10px;
+  font-size: 1em;
+  max-width: 120px;
+  text-align: center;
+  transition: 1.2s;
+}
+
+#imersaodev:hover{
+  transform: rotateX(360deg);
+  cursor: pointer;
+}
+
+#imersaodev strong {
+  background: linear-gradient(60deg, white 2%, #6BD0FE 40%, #A2FDC0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+div#container {
+  background: #F3F3F3;
+  border-radius: 20px;
+  box-shadow: 6px 6px 8px #5C6B73;
+  padding: 60px;
+  margin: 64px;
+  color: #2B5E9B;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+ 
+}
+
+.perfil-foto {
+  border-radius: 400px;
+  max-height: 195px;
+  box-shadow: 0px 4px 8px rgb(47, 96, 153, 0.30);
+  transition: 1s;
+}
+
+.perfil-foto:hover{transform: scale(110%);}
+
+.titulo {
+  margin-left: 18px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 18.5px;
+}
+
+.tema button{
+  align-self: flex-end;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border-style: dotted;
+  width: 138px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.tema button:hover {
+  border-style: dotted;
+  border-color: black;
+  box-shadow: 1px 1px 6px gray;
+}
+
+.projetos {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 2.8fr 1fr;
+  gap: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1.8px solid #1c1c1c;
+  border-radius: 20px;
+}
+
+.projetos ::-webkit-scrollbar {
+  width: 7px;
+  height: 2px;
+}
+
+.projetos-titulo strong{
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-item {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2em;
+}
+
+.projetos-item p{
+  color: black;
+}
+
+.portfolio {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding: 16px;
+  background: linear-gradient(to right, #E0D4D0, #E0E4F9, #E0F4F9);
+  border-radius: 20px;
+  max-height: 500px;
+}
+
+.conquistas {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #E0D4D0, #E0E4F9, #E0F4F9);
+  padding: 16px;
+  border-radius: 20px;
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.conquistas strong {
+  margin-left: -30px; 
+}
+
+.conquistas { list-style-type: none;}
+
+.conquistas img {
+  max-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+/*Configurações tema dark*/
+.dark {
+  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
+
+.dark #container{
+  background: rgba(51, 52, 57, 1);
+  color: F6F6F6;
+}
+
+.dark h1  {
+  color: white;
+}
+
+.dark h3  {
+  color: white;
+}
+
+.dark .projetos {
+  color: #1C1C1C;
+}
+
+.dark .tema button {
+  background-color: #1C1C1C;
+  color: whitesmoke;
+  border-color: #f7f7f7;
+}
+
+.dark .tema button:hover {
+  border-style: dotted;
+  border-color: white;
+  box-shadow: 1px 1px 6px white;
+}
+
+.dark .rodape h4 {
+  color: #1C1C1C;
+}
+
+.dark .rodape {
+  background: rgba(51, 52, 57, 1);
+  color: F6F6F6;
+}
+
+.dark .rodape h4 {
+  color: white;
+}
+
+.dark .rodape a {
+  color: white;
+}
+/* */
+
+.rodape {
+  padding-top: 2px;
+  min-height: 130px;
+  background: #F3F3F3;
+  border-radius: 20px;
+  box-shadow: 6px 6px 8px #5C6B73;
+  margin: 64px;
+  color: #2B5E9B;
+}
+
+.rodape h4 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.rodape ul li a {
+  transition: 0.4s;
+}
+.rodape ul li a:hover {
+  color: #2B5E9B;
+}
+
+.rodape ul{
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.rodape img{
+  width: 16px;
+  margin-right: 4px;
+}
