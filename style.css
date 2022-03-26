@@ -154,7 +154,7 @@ div#container {
   margin-left: -30px; 
 }
 
-.conquistas { list-style-type: none;}
+.conquistas li{ list-style-type: none;}
 
 .conquistas img {
   max-height: 100px;
